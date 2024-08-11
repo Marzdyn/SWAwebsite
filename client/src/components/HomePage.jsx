@@ -53,8 +53,7 @@ export default function HomePage() {
         "/IMG_7874.jpg",
         "/IMG_7988.jpg",
         "/IMG_8514.jpg",
-        "/IMG_8516.jpg",
-        "/IMG_8578.jpg"
+        "/IMG_8516.jpg"
     ]
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -135,6 +134,7 @@ export default function HomePage() {
                 </div>
             </div>
 
+        <div className="tabletSizedDivContainer">
             <div className="aboutmeContainer">
                 <h3>About Me</h3>
                 <p>I was born and raised in Bradenton, FL, where I enjoyed playing baseball and spending time with family and friends. Growing up in Florida was unique; I lived in a place where many people saved money to vacation.<br></br> I was just 15 minutes from the beach, except during spring break or summer when traffic was 20 times heavier than normal.
@@ -145,10 +145,11 @@ export default function HomePage() {
                     <br></br><br></br>
                     Intrigued, I researched fire departments in Lexington, South Carolina, and discovered their county fire department. A few short months later, <br></br>I found myself in recruit school. The brotherhood, sense of purpose, impact on others, and the attention to detail in a potentially deadly job are just a few of the reasons I LOVE this career. With that being said, the firehouse has blessed me with a schedule that allows for significant time off, thanks to the full days spent on shift. This flexibility enabled me to utilize my G.I. Bill to pursue a second career.
                     <br></br><br></br>
-                    I chose to obtain a full-stack website and web application development certification. This training means I can develop fully customizable and functional websites and applications from start to finish. I decided to channel this newfound passion into a business I run myself called SWA!
+                    I chose to obtain a full-stack website and web application development certification. This training means I can develop fully customizable and functional websites and applications from start to finish. I decided to channel this newfound passion into a business, I run myself, called SWA!
                     <br></br><br></br>
-                    Now that you know a bit about my family and I, submit an inquiry through the form to the left, and I will reply within 24 hours. Let's create something cool together!
+                    Now that you know a bit about my family and I, submit an inquiry through the form, and I will reply within 24 hours. Let's create something cool together!
                 </p>
+            </div>
             </div>
             <div className="homepageSlideshow" style={{ backgroundImage: `url(${slideshowImages[currentImageIndex]})`, backgroundSize: "contain" }}>
 

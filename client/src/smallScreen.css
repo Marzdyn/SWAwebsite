@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 787px) and (max-width:1199px) {
+
+    /* all navbar CSS */
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background: linear-gradient(135deg, #000000 0%, #333333 100%);
+        min-height: 5em;
+        height: 5em;
+        color: #fff;
+    }
+
+    .navbar>h5 {
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translateX(-50%);
+        font-size: .6em;
+        font-weight: bold;
+        color: #ff0000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: .1em;
+        border-radius: 5px;
+        margin-top: .1em;
+    }
+
+    .swaBigLogo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 20vh;
+        width: 15em;
+        filter: drop-shadow(0 4px 8px rgba(168, 168, 168, 0.2)) drop-shadow(0 8px 16px rgba(185, 185, 185, 0.1));
+        margin-bottom: 1em;
+    }
+
+    .flagNavImg {
+        max-height: 3.5em;
+        max-width: 7em;
+        margin-left: 10%;
+    }
+
+    .menuIcon {
+        justify-content: right;
+        position: absolute;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        right: 1.75em;
+        top: 1.25em;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .menuIcon:hover {
+        background-color: #ff0000;
+        border-color: #ff0000;
+        color: white;
+    }
+
+    .hoverMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        width: 5em;
+        height: 4em;
+        background-color: #525050;
+        top: .75em;
+        right: 3.5em;
+        border-radius: 12px;
+        z-index: 10;
+        border: 1.5px solid black;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .hoverMenu.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hoverMenu.show>a {
+        font-size: .5em;
+        padding: .3em;
+        text-decoration: none;
+        color: #c2c2c2;
+        text-align: center;
+    }
+
+    .hoverMenu.show>a:hover {
+        font-size: .5em;
+        text-decoration: underline;
+    }
+
+    /* all homepage css  */
+
+    .homepageContainer {
+        display: flex;
+        flex-direction: column;
+        color: #242424;
+        background-color: rgb(105, 105, 105);
+    }
+
+    .homepageContainer>img {
+        width: 100%;
+        max-height: 4em;
+        position: absolute;
+        top: 5em;
+        z-index: 0;
+    }
+
+    .homepageSummary {
+        font-size: .87em;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        text-align: center;
+        margin-top: 0.25em;
+        padding-left: .25em;
+        padding-right: .25em;
+        z-index: 1;
+        color: rgb(252, 252, 252);
+    }
+
+    .mobileSizedContainerDiv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6%;
+        max-width: 44%;
+        margin-left: 6%;
+        margin-bottom: 250px;
+    }
+
+    .formContainer {
+        padding: .3em .75em .75em .75em;
+        border: 1.5px solid #d3d3d3;
+        border-radius: 10px;
+        background-color: #adadad;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 18em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-left: .75em;
+    }
+
+    .formContainer>p {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: .2em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .formContainer form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .formContainer label {
+        margin-bottom: 0.3em;
+        font-weight: bold;
+        font-size: .8em;
+        padding-left: .4em;
+    }
+
+    .messageDivContainer {
+        position: relative;
+    }
+
+    .messageLabel {
+        position: absolute;
+        left: .145em;
+    }
+
+    .formTextarea {
+        position: absolute;
+        left: 5.1em;
+        width: 14.2em;
+    }
+
+    .formContainer input,
+    .formContainer textarea {
+        padding: 0.2em;
+        margin-bottom: .5em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        font-size: .9em;
+    }
+
+    .formContainer button {
+        padding: 0.25em .4em;
+        border: none;
+        border-radius: 5px;
+        background-color: #858585;
+        color: #fff;
+        font-size: .5em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 5em;
+    }
+
+    .formContainer button:hover {
+        background-color: #aaa;
+    }
+
+    .tabletSizedDivContainer {
+        position: relative;
+    }
+
+    .aboutmeContainer {
+        position: absolute;
+        max-width: 50%;
+        top: -41.5em;
+        right: 1.75%;
+        border: 2px solid black;
+        padding: 4px;
+        background-color: #333;
+        color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+    }
+
+    .aboutmeContainer>p {
+        font-size: 9.5px;
+        font-family: 'DM Sans';
+    }
+
+    .aboutmeContainer>h3 {
+        font-size: 15px;
+    }
+
+    .bulletpointsContainer {
+        margin-left: 10%;
+        font-size: .9em;
+        color: rgba(0, 0, 0, 0.856);
+        text-align: left;
+    }
+
+    .bulletpointsContainer>ul>li {
+        padding: .1em;
+        font-family: 'DM Sans';
+    }
+
+    .bulletpointsContainer>h2 {
+        padding-bottom: .2em;
+        text-decoration: underline;
+    }
+
+    .homepageSlideshow {
+        position: absolute;
+        width: 25em;
+        height: 14em;
+        left: .5em;
+        bottom: -23em;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* footer css below here */
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #333;
+        color: #f0f0f0;
+        padding: .3em;
+        bottom: 0;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer>p {
+        font-size: .75em;
+    }
+
+    .footer>img {
+        max-width: 1.5em;
+        max-height: 1.5em;
+        margin-left: 0.5em;
+    }
+}
