@@ -74,12 +74,12 @@
     }
 
     .hoverMenu {
+        padding: 5px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         position: relative;
-        width: 5em;
-        height: 4em;
+        width: fit-content;
+        height: fit-content;
         background-color: #525050;
         top: .75em;
         right: 3.5em;

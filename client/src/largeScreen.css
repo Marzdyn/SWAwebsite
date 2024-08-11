@@ -80,18 +80,18 @@
   }
 
   .hoverMenu {
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     position: relative;
-    width: 10em;
-    height: 9em;
+    width: fit-content;
+    height: fit-content;
     background-color: #525050;
-    top: 2.5em;
-    right: 5.75em;
+    top: .75em;
+    right: 3.5em;
     border-radius: 12px;
     z-index: 10;
-    border: 2px solid black;
+    border: 1.5px solid black;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-in-out;
