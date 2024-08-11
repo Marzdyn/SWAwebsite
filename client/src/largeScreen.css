@@ -181,18 +181,23 @@
   }
 
   .messageDivContainer {
-    position: relative;
+    display: flex;
+    flex-direction: row;
   }
 
-  .messageLabel {
-    position: absolute;
-    left: .145em;
+  .nameDivContainer {
+    display: flex;
+    flex-direction: row;
   }
 
-  .formTextarea {
-    position: absolute;
-    left: 5em;
-    width: 15em;
+  .emailDivContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .formTextarea, .formContainer input, .formContainer textarea {
+    flex-grow: 1;  /* Makes textarea and inputs take up the full available width */
+    width: 100%;   /* Ensures they fill the parent container */
   }
 
   .formContainer input,
@@ -214,7 +219,7 @@
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 4em;
+    margin-top: 1.5em;
   }
 
   .formContainer button:hover {

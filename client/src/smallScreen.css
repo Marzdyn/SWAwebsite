@@ -178,20 +178,29 @@
         padding-left: .4em;
     }
 
-    .messageDivContainer {
+    /* .messageDivContainer {
         position: relative;
-    }
+    } */
 
-    .messageLabel {
-        position: absolute;
-        left: .145em;
-    }
-
-    .formTextarea {
-        position: absolute;
-        left: 5.1em;
-        width: 14.2em;
-    }
+    .messageDivContainer {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .nameDivContainer {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .emailDivContainer {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .formTextarea, .formContainer input, .formContainer textarea {
+        flex-grow: 1;  /* Makes textarea and inputs take up the full available width */
+        width: 100%;   /* Ensures they fill the parent container */
+      }
 
     .formContainer input,
     .formContainer textarea {
@@ -212,7 +221,7 @@
         font-size: .5em;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        margin-top: 5em;
+        margin-top: 2em;
     }
 
     .formContainer button:hover {

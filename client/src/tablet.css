@@ -179,12 +179,23 @@
 
     .messageDivContainer {
         display: flex;
-    }
-
-    .formTextarea {
-        flex-grow: 1;
-        margin-right: 5vw;
-    }
+        flex-direction: row;
+      }
+  
+      .nameDivContainer {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .emailDivContainer {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .formTextarea, .formContainer input, .formContainer textarea {
+        flex-grow: 1;  /* Makes textarea and inputs take up the full available width */
+        width: 100%;   /* Ensures they fill the parent container */
+      }
 
     .formContainer input,
     .formContainer textarea {

@@ -157,7 +157,7 @@
     .formContainer>p {
       text-align: center;
       font-size: .6em;
-      margin-bottom: .1em;
+      margin-bottom: 1em;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
   
@@ -169,6 +169,7 @@
   
     .formContainer label {
       margin-bottom: 0.3em;
+      padding: 2px;
       font-weight: bold;
       font-size: .5em;
     }
@@ -176,9 +177,20 @@
     .messageDivContainer {
       display: flex;
     }
-  
-    .formTextarea {
-      flex-grow: 1;
+
+    .nameDivContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .emailDivContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .formTextarea, .formContainer input, .formContainer textarea {
+      flex-grow: 1;  /* Makes textarea and inputs take up the full available width */
+      width: 100%;   /* Ensures they fill the parent container */
     }
   
     .formContainer input,

@@ -102,7 +102,7 @@ export default function HomePage() {
                 <div className="formContainer">
                     <p>Any questions or project ideas?</p>
                     <form onSubmit={handleSubmit}>
-                        <div>
+                        <div className="nameDivContainer">
                             <label>Name:</label>
                             <input
                                 type="text"
@@ -111,7 +111,7 @@ export default function HomePage() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <div>
+                        <div className="emailDivContainer">
                             <label>Email:</label>
                             <input
                                 type="email"
